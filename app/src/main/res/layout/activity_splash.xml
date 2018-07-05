@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ic_films"
+        android:layout_width="@dimen/splash_icon_films_size"
+        android:layout_height="@dimen/splash_icon_films_size"
+        android:layout_marginBottom="@dimen/activity_spacing"
+        android:layout_marginEnd="@dimen/activity_spacing"
+        android:layout_marginLeft="@dimen/activity_spacing"
+        android:layout_marginRight="@dimen/activity_spacing"
+        android:layout_marginStart="@dimen/activity_spacing"
+        android:layout_marginTop="@dimen/splash_icon_films_margin_top"
+        android:contentDescription="@string/launch_icon_description"
+        android:scaleType="center"
+        android:src="@drawable/ic_films_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_lens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/launch_icon_description"
+        android:src="@drawable/ic_lens_blush"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_films"
+        app:layout_constraintEnd_toEndOf="@+id/ic_films"
+        app:layout_constraintStart_toStartOf="@+id/ic_films"
+        app:layout_constraintTop_toTopOf="@+id/ic_films" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/splash_icon_tmdb_margin_bottom"
+        android:layout_marginEnd="@dimen/activity_spacing"
+        android:layout_marginLeft="@dimen/activity_spacing"
+        android:layout_marginRight="@dimen/activity_spacing"
+        android:layout_marginStart="@dimen/activity_spacing"
+        android:layout_marginTop="@dimen/activity_spacing"
+        android:contentDescription="@string/tmdb_logo_description"
+        android:src="@drawable/ic_powered_by_rectangle_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

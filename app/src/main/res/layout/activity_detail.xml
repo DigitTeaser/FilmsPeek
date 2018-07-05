@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_detail_poster"
+            android:layout_width="@dimen/poster_width"
+            android:layout_height="@dimen/poster_height"
+            android:layout_marginLeft="@dimen/activity_spacing"
+            android:layout_marginStart="@dimen/activity_spacing"
+            android:layout_marginTop="@dimen/activity_spacing"
+            android:contentDescription="@string/poster_description"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_spacing"
+            android:layout_marginLeft="@dimen/activity_spacing"
+            android:layout_marginRight="@dimen/activity_spacing"
+            android:layout_marginStart="@dimen/activity_spacing"
+            android:layout_marginTop="@dimen/activity_spacing"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/film_title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_detail_poster"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Jurassic World: Fallen Kingdom" />
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_spacing"
+            android:layout_marginStart="@dimen/activity_spacing"
+            android:layout_marginTop="@dimen/activity_spacing"
+            android:paddingLeft="@dimen/activity_spacing"
+            android:paddingRight="@dimen/activity_spacing"
+            app:layout_constraintStart_toEndOf="@+id/iv_detail_poster"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="2018-06-06" />
+
+        <TextView
+            android:id="@+id/tv_average_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_spacing"
+            android:layout_marginRight="@dimen/activity_spacing"
+            android:layout_marginTop="@dimen/activity_spacing"
+            android:paddingLeft="@dimen/activity_spacing"
+            android:paddingRight="@dimen/activity_spacing"
+            android:text="@string/rating"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="Rating: 6.7" />
+
+        <TextView
+            android:id="@+id/tv_overview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_spacing"
+            android:layout_marginStart="@dimen/activity_spacing"
+            android:layout_marginTop="@dimen/activity_spacing"
+            android:paddingTop="@dimen/activity_spacing"
+            android:text="@string/overview"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/film_overview_text_size"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_poster" />
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_spacing"
+            android:layout_marginLeft="@dimen/activity_spacing"
+            android:layout_marginRight="@dimen/activity_spacing"
+            android:layout_marginStart="@dimen/activity_spacing"
+            android:paddingBottom="@dimen/activity_spacing"
+            android:paddingLeft="@dimen/activity_spacing"
+            android:paddingRight="@dimen/activity_spacing"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/film_overview_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_overview_title"
+            tools:text="Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady to help prevent the extinction of the dinosaurs once again." />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

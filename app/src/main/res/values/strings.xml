@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Films Peek</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_sort_by_popularity">Sort by Popularity</string>
+    <string name="action_sort_by_rating">Sort by Rating</string>
+    <string name="launch_icon_description">This is one part of the app logo.</string>
+    <string name="tmdb_logo_description">This is the logo of the movie database.</string>
+    <string name="poster_description">This is the poster of a film.</string>
+    <string name="overview">Overview</string>
+    <string name="rating">Rating: </string>
+    <string name="no_connection">No Connection.</string>
+    <string name="something_wrong">Something went wrong.</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="list_item_anim_duration">500</integer>
+
+    <dimen name="activity_spacing">8dp</dimen>
+    <dimen name="splash_icon_films_margin_top">128dp</dimen>
+    <dimen name="splash_icon_films_size">144dp</dimen>
+    <dimen name="splash_icon_tmdb_margin_bottom">32dp</dimen>
+    <dimen name="cardview_elevation">3dp</dimen>
+    <dimen name="poster_width">180dp</dimen>
+    <dimen name="poster_height">240dp</dimen>
+    <dimen name="poster_spacing_between_cardview">4dp</dimen>
+    <dimen name="poster_corner_radius">3dp</dimen>
+
+    <dimen name="film_title_text_size">36sp</dimen>
+    <dimen name="film_overview_text_size">18sp</dimen>
+</resources>
