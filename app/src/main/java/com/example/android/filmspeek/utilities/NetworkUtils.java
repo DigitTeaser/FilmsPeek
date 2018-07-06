@@ -25,20 +25,18 @@ public final class NetworkUtils {
 
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
 
-    private static final String FILM_BASE_URL = "https://api.themoviedb.org/3/discover/movie";
+    private static final String FILM_BASE_URL = "https://api.themoviedb.org/3/movie";
 
     /**
      * The Movie Database API Key defines here. DO NOT share the API Key at all times.
      */
     private static final String api_key = "YOUR_OWN_API_KEY";
 
-    public static final String sort_by_popularity = "popularity.desc";
+    public static final String sort_by_popularity = "popular";
 
-    public static final String sort_by_rate = "vote_average.desc";
+    public static final String sort_by_rate = "top_rated";
 
     private static final String API_KEY_PARAM = "api_key";
-
-    private static final String SORT_PARAM = "sort_by";
 
     private static final String PAGE_PARAM = "page";
 
@@ -57,8 +55,8 @@ public final class NetworkUtils {
 
     public static String buildFilmUrlString(String sort, int page) {
         HttpUrl.Builder urlBuilder = HttpUrl.parse(FILM_BASE_URL).newBuilder();
+        urlBuilder.addPathSegment(sort);
         urlBuilder.addQueryParameter(API_KEY_PARAM, api_key);
-        urlBuilder.addQueryParameter(SORT_PARAM, sort);
         urlBuilder.addQueryParameter(PAGE_PARAM, Integer.toString(page));
 
         return urlBuilder.build().toString();

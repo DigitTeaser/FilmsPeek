@@ -38,13 +38,4 @@ public class DetailActivity extends AppCompatActivity {
             overviewTextView.setText(film.getOverview());
         }
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Make the UP button behave like the BACK button, which don't make the loader refresh.
-        if (item.getItemId() == android.R.id.home) {
-            onBackPressed();
-        }
-        return true;
-    }
 }
